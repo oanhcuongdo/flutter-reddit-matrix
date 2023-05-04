@@ -25,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -47,29 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBTa5m4-ePHiM5PPrQQj4LugraI5ADEk3M',
-    appId: '1:380609523336:web:d30895dbd69584a931b93d',
-    messagingSenderId: '380609523336',
-    projectId: 'reddit-clone-tutorial-8091a',
-    authDomain: 'reddit-clone-tutorial-8091a.firebaseapp.com',
-    storageBucket: 'reddit-clone-tutorial-8091a.appspot.com',
+    apiKey: 'AIzaSyDztKiuxD57xyy2JR0yn9mZVjIuokzPdNU',
+    appId: '1:586552262655:web:79955cf59e9a41d17c71ca',
+    messagingSenderId: '586552262655',
+    projectId: 'matrix-idea-notes',
+    authDomain: 'matrix-idea-notes.firebaseapp.com',
+    storageBucket: 'matrix-idea-notes.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAxyQ7EgDw-ZSrCTqnBStYo_OIPCfbmE-4',
-    appId: '1:380609523336:android:bb576b87cbb505fd31b93d',
-    messagingSenderId: '380609523336',
-    projectId: 'reddit-clone-tutorial-8091a',
-    storageBucket: 'reddit-clone-tutorial-8091a.appspot.com',
+    apiKey: 'AIzaSyAiJ_X2Gz6ssMgbUKpJW9nWZa9H5NeVMzM',
+    appId: '1:586552262655:android:db200527a680387a7c71ca',
+    messagingSenderId: '586552262655',
+    projectId: 'matrix-idea-notes',
+    storageBucket: 'matrix-idea-notes.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCLsooo3Ca2PyRj92s3qpcFPsN3jnIM17s',
-    appId: '1:380609523336:ios:b39e394ab65d90d331b93d',
-    messagingSenderId: '380609523336',
-    projectId: 'reddit-clone-tutorial-8091a',
-    storageBucket: 'reddit-clone-tutorial-8091a.appspot.com',
-    iosClientId: '380609523336-2amum5bidqtue1scvv8mbb0c11lj6k7d.apps.googleusercontent.com',
+    apiKey: 'AIzaSyA4frUb9BhnDbYAnHKIeT6lV3tzDSkOnA0',
+    appId: '1:586552262655:ios:4ca8c7844e11198d7c71ca',
+    messagingSenderId: '586552262655',
+    projectId: 'matrix-idea-notes',
+    storageBucket: 'matrix-idea-notes.appspot.com',
+    iosClientId: '586552262655-v0mrsoamm7a2lh28si8uonalvd7lpl7m.apps.googleusercontent.com',
+    iosBundleId: 'com.example.redditTutorial',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyA4frUb9BhnDbYAnHKIeT6lV3tzDSkOnA0',
+    appId: '1:586552262655:ios:4ca8c7844e11198d7c71ca',
+    messagingSenderId: '586552262655',
+    projectId: 'matrix-idea-notes',
+    storageBucket: 'matrix-idea-notes.appspot.com',
+    iosClientId: '586552262655-v0mrsoamm7a2lh28si8uonalvd7lpl7m.apps.googleusercontent.com',
     iosBundleId: 'com.example.redditTutorial',
   );
 }
